@@ -1,0 +1,84 @@
+
+
+SKIN FreeIPA IdM Identity Management
+=========================================
+
+Packages on DVD
+yum install ipa-server bind bind-dyndb-ldap
+
+VERSION
+ipa-server-3.0.0-37.el6 
+
+INTERACTIVE INSTALL
+ipa-server-install --no-ntp 
+
+Details from the install:
+The IPA Master Server will be configured with:
+Hostname:      dns.example.com
+IP address:    172.16.105.150
+Domain name:   example.com
+Realm name:    SKIN.EXAMPLE.COM
+
+PW clontibret1
+
+POST INSTALL
+service sshd restart
+
+Test its working:
+$ kinit admin
+Password for admin@SKIN.EXAMPLE.COM: 
+$ ipa user-find admin
+
+
+WEB UI
+https://dns.example.com/ipa/ui/
+admin / clontibret1
+
+Settings for shell
+IPA Server >> Configuration
+This was set to /bin/sh :-(
+
+Set UID ranges
+IPA Server >> ID Ranges 
+
+CLIENT
+ipa-client-install --domain example.com --server dns.example.com --mkhomedir --no-ssh --no-dns-sshfp --permit
+
+User authorized to enroll computers: admin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Setup complete
+
+Next steps:
+	1. You must make sure these network ports are open:
+		TCP Ports:
+		  * 80, 443: HTTP/HTTPS
+		  * 389, 636: LDAP/LDAPS
+		  * 88, 464: kerberos
+		UDP Ports:
+		  * 88, 464: kerberos
+
+	2. You can now obtain a kerberos ticket using the command: 'kinit admin'
+	   This ticket will allow you to use the IPA tools (e.g., ipa user-add)
+	   and the web user interface.
+	3. Kerberos requires time synchronization between clients
+	   and servers for correct operation. You should consider enabling ntpd.
+
+Be sure to back up the CA certificate stored in /root/cacert.p12
+This file is required to create replicas. The password for this
+file is the Directory Manager password

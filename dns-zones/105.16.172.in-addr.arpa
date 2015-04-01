@@ -1,0 +1,17 @@
+$ORIGIN .
+$TTL 86400	; 1 day
+105.16.172.in-addr.arpa	IN SOA	dnsmaster.example.com. kevinmcnally26.example.com. (
+				2012099959 ; serial
+				43200      ; refresh (12 hours)
+				3600       ; retry (1 hour)
+				1209600    ; expire (2 weeks)
+				86400      ; minimum (1 day)
+				)
+			NS	dnsmaster.example.com.
+$ORIGIN 105.16.172.in-addr.arpa.
+130			PTR	kickstart.example.com.
+131			PTR	puppet.example.com.
+132			PTR	pulp.example.com.
+133			PTR	foreman.example.com.
+134			PTR	dnsmaster.example.com.
+149			PTR	test44.example.com.

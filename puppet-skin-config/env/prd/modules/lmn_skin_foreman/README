@@ -1,0 +1,6 @@
+mysql <<<"create database foreman"
+mysql <<<"create user 'foreman'@'localhost' identified by 'sdflkj'"
+mysql <<<"grant all privileges on foreman.* to 'foreman'@'localhost'"
+foreman-rake db:migrate
+foreman-rake db:seed
+service mysqld restart

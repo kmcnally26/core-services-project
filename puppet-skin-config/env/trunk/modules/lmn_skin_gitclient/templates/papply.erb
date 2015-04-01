@@ -1,0 +1,15 @@
+#
+# This file is managed by puppet
+#
+
+#!/bin/bash
+
+# Pull git and do a puppet run locally, then send report
+
+MY_ENV=/etc/puppet/env/prd
+cd $MY_ENV
+
+git pull
+puppet apply  --modulepath=${MY_ENV}/modules ${MY_ENV}/manifests/site.pp
+
+exit 0

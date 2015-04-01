@@ -1,0 +1,239 @@
+
+
+PUPPET 3.4.3
+============================
+
+These notes are for the puppet master when all the infra is setup 
+Rebuilding
+You cannot rebuild using puppet :-(
+Kickstart file 
+
+PUPPET MASTER PACKAGES
+EPEL and puppet release repos needed
+https://yum.puppetlabs.com/puppetlabs-release-el-6.noarch.rpm
+yum -y install http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+yum install puppet puppet-server facter -y
+
+
+
+CONFIG FOR MASTER
+For config changes restart httpd (passenger)
+
+
+[main]
+logdir=/var/log/puppet
+vardir=/var/lib/puppet
+ssldir=/var/lib/puppet/ssl
+rundir=/var/run/puppet
+autosign=true
+privatekeydir = $ssldir/private_keys { group = service }
+hostprivkey = $privatekeydir/$certname.pem { mode = 640 }
+
+[agent]
+server=puppet-test.example.com
+report=true
+pluginsync=true
+environment=prd
+
+[master]
+## Foreman Proxy
+autosign = $confdir/autosign.conf {owner = service, group = service, mode = 664 }
+
+ssl_client_header=SSL_CLIENT_S_DN
+ssl_client_verify_header=SSL_CLIENT_VERIFY
+reports=log, foreman
+
+## Environments
+environmentpath = /etc/puppet/environments/
+#modulepath=/etc/puppet/env/$environment/modules
+#manifest=/etc/puppet/env/$environment/manifests/site.pp
+
+
+## Foreman ENC which I never got working
+#external_nodes=/etc/puppet/foreman_enc.rb
+#node_terminus=exec
+
+
+
+# puppet config print manifest --section master --environment prd
+/etc/puppet/env/prd/manifests/site.pp
+
+
+PACKAGE AND CONFIG FOR CLIENTS
+yum install puppet
+[main]
+logdir=/var/log/puppet
+vardir=/var/lib/puppet
+ssldir=/var/lib/puppet/ssl
+rundir=/var/run/puppet
+privatekeydir = $ssldir/private_keys { group = service }
+hostprivkey = $privatekeydir/$certname.pem { mode = 640 }
+
+# This is for puppet apply run from each client to send reports to foreman
+# Requires /usr/lib/ruby/site_ruby/1.8/puppet/reports/foreman.rb on the client
+reports=log, foreman
+
+# This section not needed for papply setup and no cert needed
+[agent]
+server=puppet.example.com
+report=true
+pluginsync=true
+environment=prd
+certname=pulp.example.com
+
+VMWARE TOOLS
+We need all hosts to be in sync so use VMware as ntp sync 
+Install vmware tools and thats it as the option is default 
+
+
+
+PUPPET APPLY OR PUPPET AGENT
+
+The puppet agent compiles a manifest on the puppet master
+The puppet apply compiles a manifest locally, masterless setup so no certs needed
+Both check and send reports every 30 mins in a cronjob
+
+Puppet agent checks against the puppet master
+
+PUppet apply checks against its local git copy of the code base
+
+Checks are for changes in our puppet config AND changes on the local system
+
+
+Script for clients;
+# Pull git and do a puppet run locally, then send report
+MY_ENV=/etc/puppet/env/prd
+cd $MY_ENV
+git pull
+puppet apply  --modulepath=${MY_ENV}/modules ${MY_ENV}/manifests/site.pp
+
+
+STDLIB
+for anchor in init.pp to work add these std libraries to master
+Just needs to be in the module path of each env
+# puppet module install puppetlabs/stdlib
+
+
+RUBYGEMS PROBLEMS
+Problems upgrading puppet because of rubygems:
+sudo rpm -Uvh http://rbel.frameos.org/rbel6 
+yum install rubygems
+sudo rpm -ivh http://yum.puppetlabs.com/el/6/products/x86_64/puppetlabs-release-6-10.noarch.rpm
+yum install puppet
+
+
+PUPPET LOGS
+tail -f /var/log/messages - for puppet errors
+
+
+/usr/local/bin/lmn-cd
+#!/bin/bash
+
+# this script should not be run directly,
+# instead you need to source it from your .bashrc,
+# by adding this line:
+#   . /usr/local/bin/lmn-cd
+#
+
+function lmn-cd() {
+
+cd /etc/puppet/env/trunk/modules/$1
+
+}
+
+
+
+PUPPET AGENT IN A KICKSTART FILE
+echo Requesting a puppet cert
+puppet agent --waitforcert 10 --certname test5.example.com --server puppet.example.com --onetime --no-daemonize --test --ssldir /var/lib/puppet/ssl --report true --pluginsync true
+
+
+This means puppet will do a full run and add all the classes BEFORE the reboot
+
+
+PUPPET MASTER REPORTS TO FOREMAN
+Puppet master:
+[master]
+reports=log, foreman
+
+In puppet reports are in /var/lib/puppet/reports
+Everytime a client does a run a new .yaml report is created
+Each client has report=true
+See /var/log/messages on puppet for report related errors
+
+This file needs to be on the puppet master:
+/usr/lib/ruby/site_ruby/1.8/puppet/reports/foreman.rb
+$foreman_url='http://foreman.example.com:3000'  - this worked without https
+$foreman_url='https://foreman.example.com'      - LMN is like this
+
+Note that we are pointing to puppets cert and not foremans:
+$foreman_ssl_ca = "/var/lib/puppet/ssl/certs/ca.pem"
+$foreman_ssl_cert = "/var/lib/puppet/ssl/certs/puppet.example.com.pem"
+$foreman_ssl_key = "/var/lib/puppet/ssl/private_keys/puppet.example.com.pem"
+
+
+I think I had to set this to for it to work:
+restrict_registered_puppetmasters false
+
+
+EXPIRE REPORTS
+    days => number of days to keep reports (defaults to 7)
+    status => status of the report (defaults to 0 --> "reports with no errors")
+
+Example:
+Expires all reports regardless of their status
+    foreman-rake reports:expire days=7
+expires all non interesting reports after one day
+    foreman-rake reports:expire days=1 status=0
+
+In my setup delete a host completely to remove all reports
+On next puppet run it will re register
+
+
+
+PUPPET APPLY AND REPORT TO FOREMAN
+You need this is a clients puppet.conf
+[master]
+reports=log, foreman
+Also this file is needed on the client
+/usr/lib/ruby/site_ruby/1.8/puppet/reports/foreman.rb
+$foreman_url='http://foreman.example.com:3000'
+In my setup it points to puppet .pem files and works
+
+
+
+Passenger
+===========
+Instead of puppetmasterd we use passenger 
+yum install -y httpd httpd-devel mod_ssl ruby-devel rubygems gcc
+yum install -y openssl-devel curl-devel gcc-c++ zlib-devel make
+gem install rack passenger
+passenger-install-apache2-module
+
+Make sure that puppet.conf is readable by apache.
+
+
+# mkdir -p /var/lib/puppet/rack/puppetmasterd
+# mkdir /var/lib/puppet/rack/puppetmasterd/{public,tmp}
+# cp /usr/share/puppet/ext/rack/config.ru /var/lib/puppet/rack/puppetmasterd
+# chown -R puppet /var/lib/puppet/rack
+# setfacl -m u:apache:rx /var/lib/puppet
+
+Point SSL to your puppet masters pem files:
+SSLCertificateFile      /var/lib/puppet/ssl/certs/puppet.example.com.pem
+SSLCertificateKeyFile   /var/lib/puppet/ssl/private_keys/example.com.pem
+
+stop puppetmaster and start httpd
+
+
+
+
+Foreman ENC
+===============
+root@puppet:~$ vi /usr/lib/ruby/site_ruby/1.8/puppet/reports/foreman.rb
+$foreman_ssl_ca = "/var/lib/puppet/ssl/certs/ca.pem"
+$foreman_ssl_cert = "/var/lib/puppet/ssl/certs/foreman.example.com.pem"
+$foreman_ssl_key = "/var/lib/puppet/ssl/private_keys/foreman.example.com.pem"
+
+
+

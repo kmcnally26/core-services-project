@@ -1,0 +1,165 @@
+
+
+PULP 2.4.0
+=============
+HDD 20GB 
+Rebuild pulp can only be done from INET
+Not with foreman
+Its a chicken and egg.
+Host must be built with correct fqdn and not altered after
+
+
+PACKAGES AND REPOS
+External for my setup:
+Requires EPEL
+Requires rhel-pulp
+
+Get packages via inet as we cant add them to a pulp server thats not built yet:
+yum -y install http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+cd /etc/yum.repos.d/ && wget http://repos.fedorapeople.org/repos/pulp/pulp/rhel-pulp.repo
+
+Apache will be installed by the above
+
+sudo -u apache pulp-manage-db - It’s important to do this before starting Apache
+service httpd start && chkconfig httpd on
+
+yum groupinstall pulp-admin -y
+vi /etc/pulp/admin/admin.conf and set 
+host = pulp.example.com
+verify_ssl = False
+
+Check hosts and resolve.conf files
+
+pulp-admin login -u admin
+Enter password: admin
+
+Gets created once you login to pulp-admin ~/.pulp/user.pem
+pulp-admin logout - will delete the file
+
+OTHER
+Downloader to manually add packages:
+yum install yum-utils -y
+yumdownloader puppet --resolve -y   without --resolve you only get the single rpm
+
+RELATIVE PATHS FOR NEW REPOS
+Copy what you see at centos eg
+http://mirror.simwood.com/centos/7.0.1406/os/x86_64/
+
+
+LIST AND DETAIL
+pulp-admin repo list
+pulp-admin repo list --detail | less
+
+CREATE
+pulp-admin rpm repo create --feed http://www.mirrorservice.org/sites/mirror.centos.org/6.5/os/x86_64/Packages/  --repo-id base-centos-6.5-os --relative-url centos/6/os/x86_64/Packages --description "CentOS 6.5 OS"
+pulp-admin rpm repo create --repo-id release-example-web-app --relative-url centos/6/release/example-web-app/ --description "Example Web App"
+pulp-admin rpm repo create --repo-id external-foreman-1.5-release --relative-url centos/6/external/foreman-release/1.5/ --description "Foreman 1.5 Releases"
+pulp-admin rpm repo create --repo-id external-foreman-1.5-plugins --relative-url centos/6/external/foreman-plugins/1.5/ --description "Foreman 1.5 Plugins"
+pulp-admin rpm repo create --repo-id external-puppet-deps --relative-url centos/6/external/puppet/dependencies/ --feed http://yum.puppetlabs.com/el/6/dependencies/x86_64/ --description "Puppet Dependencies"
+pulp-admin rpm repo create --repo-id external-puppet --relative-url centos/6/external/puppet/products/ --feed http://yum.puppetlabs.com/el/6x/products/x86_64/ --description "Puppet Products"
+pulp-admin rpm repo create --feed http://mirror.centos.org/centos/6/SCL/x86_64/  --repo-id external-centos-SCL --relative-url centos/6/external/SCL --description "CentOS Software Collections"
+
+SYNC A REPO WITH ITS EXTERNAL SOURCE TO GET/UPDATE PACKAGES
+pulp-admin rpm repo sync run --repo-id external-foreman
+
+UPLOAD A FILE TO A REPO
+pulp-admin rpm repo uploads rpm -f rpmbuild/RPMS/noarch/example-web-app-1.0-22.noarch.rpm --repo-id release-example-web-app
+pulp-admin rpm repo publish run --repo-id release-example-web-app
+
+DELETE REPO
+pulp-admin rpm repo delete --repo-id skin-puppet.repo
+
+DELETE RPM
+pulp-admin rpm repo remove rpm --repo-id BASE-CentOS-6-OS --match 'name=java-1.7.0-openjdk' --match 'version=45-2.4.3.3.el6-x86_64'
+pulp-admin rpm repo publish run --repo-id BASE-CentOS-6-OS
+
+UPDATE SOMETHING
+pulp-admin rpm repo update --description "My CentOS 6.5 DVD repo" --repo-id base-os-centos-x86_64
+
+REMOVE ORPHANS
+pulp-admin orphan remove --all
+
+LIST CURRENT TASKS
+pulp-admin tasks list
+pulp-admin tasks cancel --task-id 844563d3-e4ee-4ebd-ba8b-add2b706e4b2
+
+SEARCHING REPOS FOR RPM INFO
+pulp-admin rpm repo content rpm --repo-id=external-foreman --match 'filename=^foreman-1.4*'
+This will also list all dependencies.
+
+MY REPOS
+All my repos have an external source
+If baseurl is wrong you get an SSL nickname error. Nothing needed in yum.conf. 
+
+[base-os-centos-x86_64]
+name=Pulp Centos 6.5 DVD
+baseurl=https://172.16.105.132/pulp/repos/centos/6/os/x86_64/Packages
+enabled=1
+gpgcheck=0
+
+[external-foreman]
+name=Foreman 1.4
+baseurl=https://172.16.105.132/pulp/repos/centos/6/external/foreman/
+enabled=1
+gpgcheck=0
+sslverify=False
+
+[external-centos-SCL]
+name=CentOS 6 SCL
+baseurl=https://172.16.105.132/pulp/repos/centos/6/external/SCL/
+enabled=1
+gpgcheck=0
+sslverify=False
+
+Foreman - releases and plugins repo
+Puppet - releases and dependencies
+
+Do you need EPEL for Foreman?
+Not to install foreman only 3 packages needed from EPEL for foreman-proxy
+rubygem-rack-1.1.0-2.el6.noarch.rpm
+rubygem-rack-test-0.5.4-1.el6.noarch.rpm
+rubygem-sinatra-1.0-2.el6.noarch.rpm
+
+I have added all 3 to my external-foreman repo
+
+KICKSTART REFS
+Then ref in ks file so we can get puppet installed, this does not add .repo files to the OS:
+repo --name=base-os-centos-x86_64 --baseurl=https://172.16.105.132/pulp/repos/centos/6/os/x86_64/Packages/ --noverifyssl
+
+
+PULP ADMIN CLIENT
+This can be on any host. Just yum groupinstall pulp-admin -y
+Then add the pulp master hostname to the clients /etc/pulp/admin/admin.conf
+No need for SSH keys (I think)
+The certs for a client last 7 days by default
+
+
+
+ERRORS
+root@pulp:~$ pulp-admin login -u admin
+Enter password: 
+The web server reported an error trying to access the Pulp application. The
+likely cause is that the pulp-manage-db script has not been run prior to
+starting the server. More information can be found in Apache's error log file on
+the server itself.
+ssl_error_log
+ConnectionFailure: could not connect to localhost:27017: [Errno -2]
+sed -i 's/seeds: localhost/seeds: 127.0.0.1/' /etc/pulp/server.conf
+service mongod restart
+service httpd restart
+
+$ /etc/init.d/mongod status
+mongod dead but pid file exists
+Could not start due to needed 4GB+ of disk space - see mongodb.log
+Added the smallfiles: "true" to mongodb.conf
+
+run sync ......
+Downloading metadata...
+[-]
+... failed
+Not Found
+This was due to the feed not behaving and I could sync others
+
+SSL
+SSLCertificateFile /etc/pki/tls/certs/pulp.crt
+SSLCertificateKeyFile /etc/pki/tls/certs/pulp.key

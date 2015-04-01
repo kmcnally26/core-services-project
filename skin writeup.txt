@@ -1,0 +1,99 @@
+
+Build an Infra like LMN
+=======================
+On the train journey to and from Hatton Garden.
+
+MacBook Pro 
+8GB Memory
+VMware Fusion 
+CentOS 6.5 
+LMN used for reference only
+
+Goal:
+To be able to build VM's quickly and consistently using puppet
+To be able to rebuild all infra hosts using puppet
+Puppet is rebuilt with a custom kickstart file.
+To be able to deploy new release via rpm, from jenkins pipeline to tomcat web server.
+
+
+kickstart.example.com
+=====================
+TFTP, DHCP, PXE, foreman proxy
+
+
+dns.example.com
+===============
+bind-9.8
+
+
+puppet.example.com
+==================
+puppet-3.6, foreman proxy, passenger
+Environments: trunk, stg, prd
+Modules
+lmn_skin_soe
+lmn_skin_dnsmaster
+lmn_skin_kickstart  
+lmn_skin_pulp    
+lmn_skin_foreman    
+lmn_skin_jenkins    
+lmn_skin_puppet  
+lmn_skin_tomcat
+
+
+pulp.example.com
+================
+pulp-server-2.3
+Repos:
+external-puppet-deps
+external-puppet
+external-centos-SCL
+external-foreman
+external-foreman-plugins
+base-centos-6.5-os
+release-example-web-app
+Any additional packages from EPEL were downloaded and added to various repos
+
+
+foreman.example.com
+===================
+foreman-1.5, passenger
+Smart Proxies:
+Kickstart
+DNS
+DHCP
+Puppet
+
+
+jenkins.example.com
+===================
+jenkins-1.5
+github
+Pipeline:
+Example-Web-App
+Example-Web-App-Rpm
+Example-Web-App-Pulp
+Example-Web-App-Deploy
+Example-Site-Check
+
+
+www.example.com
+===============
+tomcat6
+Java 7
+http://www.example.com:8080/example-web-app/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

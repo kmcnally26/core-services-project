@@ -1,0 +1,19 @@
+$ORIGIN .
+$TTL 86400	; 1 day
+example.com		IN SOA	dnsmaster.example.com. kevinmcnally26.example.com. (
+				2012099961 ; serial
+				43200      ; refresh (12 hours)
+				3600       ; retry (1 hour)
+				1209600    ; expire (2 weeks)
+				86400      ; minimum (1 day)
+				)
+			NS	dnsmaster.example.com.
+			MX	10 mail.example.com.
+$ORIGIN example.com.
+dnsmaster		A	172.16.105.134
+foreman			A	172.16.105.133
+kickstart		A	172.16.105.130
+pulp			A	172.16.105.132
+puppet			A	172.16.105.131
+test44			A	172.16.105.149
+testdns			A	172.16.105.215

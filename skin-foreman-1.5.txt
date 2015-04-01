@@ -1,0 +1,545 @@
+
+
+FOREMAN 1.5
+======================
+For testing foreman-installer and see whats set up and how
+Install and configure mysql then # foreman-installer --foreman-db-type mysql --foreman-db-database foreman
+
+EPEL?
+Note to install foreman only 3 packages needed from EPEL
+yum -y install http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+rubygem-rack-1.1.0-2.el6.noarch.rpm
+rubygem-rack-test-0.5.4-1.el6.noarch.rpm
+rubygem-sinatra-1.0-2.el6.noarch.rpm
+
+RELEASES IF NEEDED
+yum -y install http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+yum -y install http://yum.theforeman.org/releases/1.4/el6/x86_64/foreman-release.rpm
+yum -y install centos-release-SCL  - Software Collections needed to install foreman, you need centos-release installed
+
+UPDATES
+After updating you will have to restart foreman and httpd
+
+
+SERVER BUILD
+Steps to get foreman running:
+1) Install packages
+2) Configure mysql DB
+3) Configure foreman
+4) Configure http with foreman/passenger config
+https://foreman.example.com/ admin / changeme
+5) Finally set up the web interface which is where you add the smart proxies etc
+
+
+LISTENING ONCE BUILT
+0.0.0.0:3000                0.0.0.0:*                   LISTEN      45193/ruby
+127.0.0.1:48830             0.0.0.0:*                   LISTEN      15985/Passenger Rack
+0.0.0.0:3306                0.0.0.0:*                   LISTEN      14677/mysqld
+0 :::80                     :::*                        LISTEN      15899/httpd
+0 :::443                    :::*                        LISTEN      15899/httpd
+
+
+
+PACKAGES FOR FOREMAN
+yum install foreman foreman-mysql2 httpd mod_ssl mod_passenger ruby193-rubygem-passenger ruby193-rubygem-passenger-native ruby193-rubygem-passenger-native-libs rubygem-passenger-native-libs rubygem-passenger-native rubygem-passenger mysql-server rubygem-rack rubygem-rack-test rubygem-sinatra rubygem-daemon_controller ruby193-rubygem-daemon_controller rubygem-fastthread rubygem-rubyipmi rubygem-rkerberos rubygem-gssapi
+
+See what packages are installed at bottom of this doc.
+
+
+
+MYSQL DATABASE
+chkconfig mysqld on
+service mysqld start
+/usr/bin/mysql_secure_installation (do not set a pw for root :-()
+
+mysql <<<"create database foreman"
+mysql <<<"create user 'foreman'@'localhost' identified by 'sdflkj'"
+mysql <<<"grant all privileges on foreman.* to 'foreman'@'localhost'"
+
+ grant all privileges on `foreman`.* to 'foreman'@'localhost' identified by 'sdflkj';
+
+/etc/foreman/database.yml
+production:
+  adapter: mysql2
+  database: foreman
+  username: foreman
+  password: sdflkj
+  pool: 5
+  timeout: 5000
+
+Initailize mysql db:
+foreman-rake db:migrate
+foreman-rake db:seed
+
+
+
+
+CONFIGURE FOREMAN SERVER
+chkconfig foreman on
+service foreman start
+
+SSL 
+You can turn off the require ssl stuff for testing if its not working 
+chkconfig httpd on
+service httpd start 
+Foreman will use your puppet keys 
+So add the foreman-proxy user to puppet group and if dns server add to named group as well
+
+/etc/foreman/settings.yaml
+PEM - the .pem file in the certs/ is eg .crt file the one in private_keys/ is the .key file
+:ssl_ca_file: /var/lib/puppet/ssl/certs/ca.pem
+:ssl_certificate: /var/lib/puppet/ssl/certs/foreman.example.com.pem
+:ssl_private_key: /var/lib/puppet/ssl/private_keys/foreman.example.com.pem
+
+
+root@foreman:~$ ps aux | grep -Ei 'ruby|passen|http|mysql|fore'
+root     14575  0.0  0.2 108168  1572 ?        S    Mar14   0:00 /bin/sh /usr/bin/mysqld_safe --datadir=/var/lib/mysql --socket=/var/lib/mysql/mysql.sock --pid-file=/var/run/mysqld/mysqld.pid --basedir=/usr --user=mysql
+mysql    14677  0.0  4.7 565080 37244 ?        Sl   Mar14   0:11 /usr/libexec/mysqld --basedir=/usr --datadir=/var/lib/mysql --user=mysql --log-error=/var/log/mysqld.log --pid-file=/var/run/mysqld/mysqld.pid --socket=/var/lib/mysql/mysql.sock
+root     15899  0.0  0.7 206996  6104 ?        Ss   Mar14   0:02 /usr/sbin/httpd
+root     15901  0.0  0.2 214036  1772 ?        Ssl  Mar14   0:00 PassengerWatchdog
+root     15904  0.0  0.3 576672  3080 ?        Sl   Mar14   0:25 PassengerHelperAgent
+nobody   15909  0.0  0.4 150476  3820 ?        Sl   Mar14   0:00 PassengerLoggingAgent
+apache   15918  0.0  0.6 207268  5364 ?        S    Mar14   0:00 /usr/sbin/httpd
+apache   15925  0.0  0.6 207260  5352 ?        S    Mar14   0:00 /usr/sbin/httpd
+foreman  15985  0.0 18.5 442996 145328 ?       Sl   Mar14   0:12 Passenger RackApp: /usr/share/foreman                                            
+root     17262  0.0  0.1   9120   992 ?        Ss   Mar14   0:00 /sbin/dhclient -H foreman.example.com -1 -q -cf /etc/dhcp/dhclient-eth0.conf -lf /var/lib/dhclient/dhclient-eth0.leases -pf /var/run/dhclient-eth0.pid eth0
+foreman  45193  0.1 15.0 414828 117612 ?       Sl   05:17   0:00 ruby /usr/share/foreman/script/rails s -p 3000 -e production -d
+
+
+
+THE FOREMAN GUI
+There are loads of sections to configure in the web interface here are some of mine:
+Only needed 3 templates to start building:
+Kickstart default PXELinux
+Kickstart RHEL default
+PXELinux global default - without this it errors when you select Build PXE default in templates
+
+For your custom templates set this to false in settings safemode_render
+
+Do not start try to build until you have the GUI completely done.
+
+
+
+FOREMAN SMART PROXY
+Each smart proxy needs all the repos
+Each smart proxy needs foreman-proxy installed and set to the role it will perform
+Choices? DHCP TFTP DNS PUPPET
+
+User read/write
+The foreman-proxy user MUST be able to read/write to the required files and dirs so 
+
+Groups
+To read .pem files add foreman-proxy and foreman to puppet group
+Also foreman-proxy user to eg. named puppet groups etc and change perms on files and dirs
+
+Proxy log
+tail -f /var/log/messages foreman-proxy/proxy.log
+
+Start foreman-proxy gotcha:
+Check status is running as if ruby has a dead process living on port 8443 it wont be running
+
+Do you need EPEL?
+Not to install foreman only 3 packages needed from EPEL for foreman-proxy
+rubygem-rack-1.1.0-2.el6.noarch.rpm
+rubygem-rack-test-0.5.4-1.el6.noarch.rpm
+rubygem-sinatra-1.0-2.el6.noarch.rpm
+
+I have added all 3 to my external-foreman repo
+
+yum install foreman-proxy
+chkconfig foreman-proxy on
+service foreman-proxy start
+
+For foreman smart proxies
+no httpd as the smart proxy lives on :8443 ruby process
+no passenger
+
+
+On one of the proxies check this:
+curl -k -H "Accept: application/json" https://172.16.105.134:8443/features
+["dns"]
+
+
+
+PUPPET AS SMART PROXY
+puppet masters conf needs this
+[master]
+autosign = $confdir/autosign.conf {owner = service, group = service, mode = 664 }
+ssl_client_header=SSL_CLIENT_S_DN
+ssl_client_verify_header=SSL_CLIENT_VERIFY
+reports=log, foreman
+
+Then /etc/puppet/autosign.conf needs
+*.example.com
+
+root@puppet:~$ cat /etc/foreman-proxy/settings.yml | grep -vE '^#|$^'
+---
+:ssl_certificate: /var/lib/puppet/ssl/certs/puppet.example.com.pem
+:ssl_ca_file: /var/lib/puppet/ssl/certs/ca.pem
+:ssl_private_key: /var/lib/puppet/ssl/private_keys/puppet.example.com.pem
+:daemon: true
+:daemon_pid: /var/run/foreman-proxy/foreman-proxy.pid
+:port: 8443
+:puppetca: true
+:ssldir: /var/lib/puppet/ssl
+:puppetdir: /etc/puppet
+:puppet: true
+:customrun_cmd: /bin/false
+:customrun_args: -ay -f -s
+:puppet_conf: /etc/puppet/puppet.conf
+:puppetssh_sudo: true
+:puppetssh_command: /usr/bin/puppet agent --onetime --no-usecacheonfailure
+:log_file: /var/log/foreman-proxy/proxy.log
+:log_level: ERROR
+
+
+LOGS
+foreman/production.log
+ssh -f foreman "tail -f /var/log/messages /var/log/httpd/*log /var/log/foreman/*.log" >> /tmp/multitail.out &
+
+FAILED TO RETRIEVE KICKSTART FILE
+DNS servers must be correct in dhcpd.conf
+If you view the hosts pxelinux template you see the URL they are trying to access
+You can try this from a browser and you should see the error message
+http://foreman.example.com/unattended/provision?token=5f44d233-f917-42cc-aefb-8b0d9c886c98
+
+
+
+SSL 
+Make foreman-proxy part of the puppet group so the proxy has access to stuff
+Make sure foreman-proxy user can write to need files/dirs
+This is needed on each smart proxy
+Add this to each smart proxies puppet.conf file or it cannot read the .pem files 
+[main]
+privatekeydir = $ssldir/private_keys { group = service }
+hostprivkey = $privatekeydir/$certname.pem { mode = 640 }
+
+EG TFTP server settings:
+/etc/foreman-proxy/settings.yml 
+:tftp: true
+:tftproot: /var/lib/tftpboot
+
+start the daemon and go to foreman dash and add smart-proxies
+kickstart.example.com 	http://172.16.105.130:8443
+
+
+
+RUBY VERSIONS
+There are 2 types of ruby package you can install with yum eg
+ruby-libvirt.x86_64
+rubygem-fakeweb.noarch
+
+There are 2 versions of ruby needed with foreman: ruby 1.8.7 and rub 1.9.3 (ruby193)
+CentOS DVD installs ruby-1.8.7 and a few libs but has no rubygems
+
+The CentOS SCL has ruby-1.9.3 - ruby193
+
+So to install rubygem-sinatra for ruby 1.9.3
+yum install ruby193-rubygem-sinatra
+
+
+
+
+WEB SERVER CONFIG HTTPD AND PASSENGER
+
+This requires: file must be called passenger.conf and requires default ssl.conf
+
+
+#
+# This file is puppet managed
+#
+
+LoadModule passenger_module modules/mod_passenger.so
+<IfModule mod_passenger.c>
+   PassengerRoot /usr/lib/ruby/gems/1.8/gems/passenger-4.0.18/lib/phusion_passenger/locations.ini
+   PassengerRuby /usr/bin/ruby
+</IfModule>
+
+AddType application/x-x509-ca-cert .crt
+AddType application/x-pkcs7-crl    .crl
+SSLPassPhraseDialog  builtin
+SSLSessionCache         shmcb:/var/cache/mod_ssl/scache(512000)
+SSLSessionCacheTimeout  300
+SSLMutex default
+SSLRandomSeed startup file:/dev/urandom  256
+SSLRandomSeed connect builtin
+SSLCryptoDevice builtin
+
+<VirtualHost _default_:443>
+ErrorLog logs/ssl_error_log
+TransferLog logs/ssl_access_log
+LogLevel warn
+SSLEngine on
+SSLProtocol all -SSLv2
+SSLCipherSuite ALL:!ADH:!EXPORT:!SSLv2:RC4+RSA:+HIGH:+MEDIUM:+LOW
+SSLCertificateFile /etc/pki/tls/certs/localhost.crt
+SSLCertificateKeyFile /etc/pki/tls/private/localhost.key
+
+<Files ~ "\.(cgi|shtml|phtml|php3?)$">
+    SSLOptions +StdEnvVars
+</Files>
+<Directory "/var/www/cgi-bin">
+    SSLOptions +StdEnvVars
+</Directory>
+SetEnvIf User-Agent ".*MSIE.*" \
+         nokeepalive ssl-unclean-shutdown \
+         downgrade-1.0 force-response-1.0
+CustomLog logs/ssl_request_log \
+          "%t %h %{SSL_PROTOCOL}x %{SSL_CIPHER}x \"%r\" %b"
+</VirtualHost>
+
+
+#
+# This file is managed by puppet
+#
+# This config requires the default ssl.conf installed by mod_ssl
+#
+
+<VirtualHost *:80>
+    ServerName <%= @fqdn %>
+    DocumentRoot /usr/share/foreman/public
+    PassengerAppRoot /usr/share/foreman
+    PassengerRuby /usr/bin/ruby193-ruby
+    AddDefaultCharset UTF-8
+    <Directory /usr/share/foreman/public>
+        <IfVersion < 2.4>
+            Allow from all
+        </IfVersion>
+        <IfVersion >= 2.4>
+            Require all granted
+        </IfVersion>
+    </Directory>
+</VirtualHost>
+
+NameVirtualHost *:443
+
+<VirtualHost *:443>
+    ServerName <%= @fqdn %>
+  
+    DocumentRoot /usr/share/foreman/public
+    PassengerAppRoot /usr/share/foreman
+    PassengerRuby /usr/bin/ruby193-ruby
+    AddDefaultCharset UTF-8
+    <Directory /usr/share/foreman/public>
+        <IfVersion < 2.4>
+            Allow from all
+        </IfVersion>  
+        <IfVersion >= 2.4>
+            Require all granted
+        </IfVersion>
+    </Directory>
+    SSLEngine On
+    SSLCertificateFile      /var/lib/puppet/ssl/certs/<%= @fqdn %>.pem
+    SSLCertificateKeyFile   /var/lib/puppet/ssl/private_keys/<%= @fqdn %>.pem
+    SSLCertificateChainFile /var/lib/puppet/ssl/certs/ca.pem
+    SSLCACertificateFile    /var/lib/puppet/ssl/certs/ca.pem
+    SSLVerifyClient         optional
+    SSLOptions              +StdEnvVars
+    SSLVerifyDepth          3
+</VirtualHost>
+
+
+
+FOREMAN SERVER RPM LIST
+
+root@foreman:~$ gem list
+
+*** LOCAL GEMS ***
+
+daemon_controller (1.2.0, 1.1.5)
+fastthread (1.0.7)
+json (1.5.5)
+passenger (4.0.5)
+rack (1.5.2, 1.1.0)
+rake (0.8.7, 0.8.3)
+
+
+root@foreman:~$ rpm -qa |grep -i foreman
+foreman-1.4.1-2.el6.noarch
+foreman-release-1.4.1-2.el6.noarch
+foreman-mysql2-1.4.1-2.el6.noarch
+
+root@foreman:~$ rpm -qa |grep -i passen
+ruby193-rubygem-passenger-4.0.5-7.el6.x86_64
+rubygem-passenger-native-libs-4.0.5-7.el6.x86_64
+mod_passenger-4.0.5-7.el6.x86_64
+ruby193-rubygem-passenger-native-4.0.5-7.el6.x86_64
+ruby193-rubygem-passenger-native-libs-4.0.5-7.el6.x86_64
+rubygem-passenger-4.0.5-7.el6.x86_64
+rubygem-passenger-native-4.0.5-7.el6.x86_64
+
+root@foreman:~$ rpm -qa |grep -i mysql
+ruby193-rubygem-mysql2-0.3.11-4.el6.x86_64
+mysql-5.1.73-3.el6_5.x86_64
+foreman-mysql2-1.4.1-2.el6.noarch
+mysql-libs-5.1.73-3.el6_5.x86_64
+perl-DBD-MySQL-4.013-3.el6.x86_64
+mysql-server-5.1.73-3.el6_5.x86_64
+
+root@foreman:~$ rpm -qa |grep -i ruby
+ruby-1.8.7.352-12.el6_4.x86_64
+ruby-rdoc-1.8.7.352-12.el6_4.x86_64
+rubygem-json-1.5.5-1.el6.x86_64
+ruby-shadow-2.2.0-2.el6.x86_64
+ruby193-v8-3.14.5.10-2.el6.centos.alt.x86_64
+ruby193-ruby-libs-1.9.3.448-40.1.el6.centos.alt.x86_64
+ruby193-ruby-irb-1.9.3.448-40.1.el6.centos.alt.noarch
+ruby193-rubygem-io-console-0.3-40.1.el6.centos.alt.x86_64
+ruby193-rubygem-rdoc-3.9.5-40.1.el6.centos.alt.x86_64
+ruby193-rubygem-rake-0.9.2.2-40.1.el6.centos.alt.noarch
+ruby193-rubygem-sexp_processor-4.1.3-4.el6.noarch
+ruby193-rubygem-mime-types-1.19-1.el6.centos.alt.noarch
+ruby193-rubygem-gettext_i18n_rails-0.10.0-3.el6.noarch
+ruby193-rubygem-builder-3.0.0-3.el6.centos.alt.noarch
+ruby193-rubygem-activesupport-3.2.8-4.el6.centos.alt.noarch
+ruby193-rubygem-activeresource-3.2.8-2.el6.centos.alt.noarch
+ruby193-rubygem-rabl-0.7.6-5.el6.noarch
+ruby193-rubygem-rest-client-1.6.1-4.el6.noarch
+ruby193-rubygem-safemode-1.2.0-5.el6.noarch
+ruby193-rubygem-rack-ssl-1.3.2-7.el6.centos.alt.noarch
+ruby193-rubygem-diff-lcs-1.1.3-1.el6.centos.alt.noarch
+ruby193-rubygem-eventmachine-0.12.10-9.el6.x86_64
+ruby193-rubygem-bundler-1.1.4-3.el6.centos.alt.noarch
+ruby193-rubygem-tilt-1.3.3-10.el6.centos.alt.noarch
+ruby193-rubygem-erubis-2.7.0-4.el6.centos.alt.noarch
+ruby193-rubygem-therubyracer-0.11.0-0.6.beta5.el6.centos.alt.x86_64
+ruby193-rubygem-polyglot-0.3.3-2.el6.centos.alt.noarch
+ruby193-rubygem-mail-2.4.4-4.el6.centos.alt.noarch
+ruby193-rubygem-passenger-4.0.5-7.el6.x86_64
+ruby193-rubygem-journey-1.0.4-2.el6.centos.alt.noarch
+ruby193-rubygem-uuidtools-2.1.3-3.el6.noarch
+ruby193-rubygem-daemons-1.1.4-7.el6.noarch
+ruby193-rubygem-oauth-0.4.7-5.el6.noarch
+ruby193-rubygem-sprockets-2.4.5-2.el6.centos.alt.noarch
+ruby193-rubygem-railties-3.2.8-3.el6.centos.alt.noarch
+ruby193-rubygem-jquery-ui-rails-4.0.2-7.el6.noarch
+ruby193-rubygem-mysql2-0.3.11-4.el6.x86_64
+ruby193-rubygem-activerecord-3.2.8-8.el6.centos.alt.noarch
+ruby193-rubygem-gettext_i18n_rails_js-0.0.8-2.el6.noarch
+ruby193-rubygem-ancestry-2.0.0-2.el6.noarch
+ruby193-rubygem-scoped_search-2.6.3-1.el6.noarch
+ruby193-rubygem-bootstrap-sass-3.0.3.0-1.el6.noarch
+ruby193-rubygem-audited-activerecord-3.0.0-2.el6.noarch
+rubygem-rack-1.1.0-2.el6.noarch
+rubygem-daemon_controller-1.1.5-1.el6.noarch
+rubygem-passenger-native-libs-4.0.5-7.el6.x86_64
+ruby193-rubygem-passenger-native-4.0.5-7.el6.x86_64
+libselinux-ruby-2.0.94-5.3.el6_4.1.x86_64
+ruby-libs-1.8.7.352-12.el6_4.x86_64
+ruby-irb-1.8.7.352-12.el6_4.x86_64
+rubygems-1.8.10-1.el6.noarch
+ruby-rgen-0.6.5-2.el6.noarch
+ruby-augeas-0.4.1-3.el6.x86_64
+ruby193-runtime-1-11.el6.centos.alt.x86_64
+ruby193-libyaml-0.1.4-5.el6.centos.alt.x86_64
+ruby193-rubygem-bigdecimal-1.1.0-40.1.el6.centos.alt.x86_64
+ruby193-ruby-1.9.3.448-40.1.el6.centos.alt.x86_64
+ruby193-rubygems-1.8.23-40.1.el6.centos.alt.noarch
+ruby193-rubygem-rack-1.4.1-5.el6.centos.alt.noarch
+ruby193-rubygem-multi_json-1.8.2-1.el6.noarch
+ruby193-rubygem-ruby_parser-3.1.1-5.el6.noarch
+ruby193-rubygem-fast_gettext-0.8.0-5.el6.noarch
+ruby193-rubygem-json-1.5.5-40.1.el6.centos.alt.x86_64
+ruby193-rubygem-i18n-0.6.0-3.el6.centos.alt.noarch
+ruby193-rubygem-activemodel-3.2.8-2.el6.centos.alt.noarch
+ruby193-rubygem-i18n_data-0.2.7-2.el6.noarch
+ruby193-rubygem-po_to_json-0.0.7-2.el6.noarch
+ruby193-rubygem-ruby2ruby-2.0.1-7.el6.noarch
+ruby193-rubygem-rack-test-0.6.1-3.el6.centos.alt.noarch
+ruby193-rubygem-rack-cache-1.2-2.el6.centos.alt.noarch
+ruby193-rubygem-thor-0.15.4-2.el6.centos.alt.noarch
+ruby193-rubygem-net-http-persistent-2.7-2.el6.centos.alt.noarch
+ruby193-rubygem-bundler_ext-0.3.0-3.el6.noarch
+ruby193-rubygem-tzinfo-0.3.33-2.el6.centos.alt.noarch
+ruby193-rubygem-ref-1.0.0-3.el6.centos.alt.noarch
+ruby193-ruby-wrapper-0.0.2-4.el6.noarch
+ruby193-rubygem-treetop-1.4.10-6.el6.centos.alt.noarch
+ruby193-rubygem-daemon_controller-1.1.4-3.el6.noarch
+ruby193-rubygem-passenger-native-libs-4.0.5-7.el6.x86_64
+ruby193-rubygem-net-ldap-0.3.1-1.el6.noarch
+ruby193-rubygem-apipie-rails-0.0.23-1.el6.noarch
+ruby193-rubygem-thin-1.3.1-7.el6.x86_64
+ruby193-rubygem-hike-1.2.1-3.el6.centos.alt.noarch
+ruby193-rubygem-actionpack-3.2.8-5.1.el6.centos.alt.noarch
+ruby193-rubygem-jquery-rails-2.0.2-2.el6.centos.alt.noarch
+ruby193-rubygem-actionmailer-3.2.8-1.el6.centos.alt.noarch
+ruby193-rubygem-arel-3.0.2-3.el6.centos.alt.noarch
+ruby193-rubygem-rails-3.2.8-2.el6.centos.alt.noarch
+ruby193-rubygem-foreigner-1.4.2-1.el6.noarch
+ruby193-rubygem-will_paginate-3.0.2-7.el6.noarch
+ruby193-rubygem-sass-3.2.13-1.el6.noarch
+ruby193-rubygem-audited-3.0.0-2.el6.noarch
+ruby193-facter-1.6.18-4.el6.x86_64
+rubygem-fastthread-1.0.7-2.el6.x86_64
+rubygem-rake-0.8.7-2.1.el6.noarch
+rubygem-passenger-4.0.5-7.el6.x86_64
+rubygem-passenger-native-4.0.5-7.el6.x86_64
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LoadModule passenger_module modules/mod_passenger.so
+<IfModule mod_passenger.c>
+   PassengerRoot /usr/lib/ruby/gems/1.8/gems/passenger-4.0.18/lib/phusion_passenger/locations.ini
+   PassengerRuby /usr/bin/ruby
+</IfModule>
+
+LoadModule ssl_module modules/mod_ssl.so
+AddType application/x-x509-ca-cert .crt
+AddType application/x-pkcs7-crl    .crl
+SSLPassPhraseDialog  builtin
+SSLSessionCache         shmcb:/var/cache/mod_ssl/scache(512000)
+SSLSessionCacheTimeout  300
+SSLMutex default
+SSLRandomSeed startup file:/dev/urandom  256
+SSLRandomSeed connect builtin
+SSLCryptoDevice builtin
+<VirtualHost _default_:443>
+ErrorLog logs/ssl_error_log
+TransferLog logs/ssl_access_log
+LogLevel warn
+SSLEngine on
+SSLProtocol all -SSLv2
+SSLCipherSuite ALL:!ADH:!EXPORT:!SSLv2:RC4+RSA:+HIGH:+MEDIUM:+LOW
+SSLCertificateFile /etc/pki/tls/certs/localhost.crt
+SSLCertificateKeyFile /etc/pki/tls/private/localhost.key
+<Files ~ "\.(cgi|shtml|phtml|php3?)$">
+    SSLOptions +StdEnvVars
+</Files>
+<Directory "/var/www/cgi-bin">
+    SSLOptions +StdEnvVars
+</Directory>
+SetEnvIf User-Agent ".*MSIE.*" \
+         nokeepalive ssl-unclean-shutdown \
+         downgrade-1.0 force-response-1.0
+CustomLog logs/ssl_request_log \
+          "%t %h %{SSL_PROTOCOL}x %{SSL_CIPHER}x \"%r\" %b"
+</VirtualHost>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

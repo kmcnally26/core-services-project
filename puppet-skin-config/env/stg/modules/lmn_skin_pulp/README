@@ -1,0 +1,11 @@
+
+Pulp-2.3
+
+SSL
+You need to remove passphrase if creating new crt or http goes cuckoo
+
+Rebuilding:
+If this is rebuilt by puppet then its missing the pulp-manage-db.
+service mongod restart
+pulp-manage-db
+service httpd restart

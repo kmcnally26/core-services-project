@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# <kevin.mcnally@lastminute.com>
+# 2014-03-14
+# Script: lmn-tag
+# Copy content from trunk to stg and or prd
+
+TRUNK=/etc/puppet/env/trunk/
+STG=/etc/puppet/env/stg/
+PRD=/etc/puppet/env/prd/
+
+trunk_stg () {
+     rsync -a --delete ${TRUNK} ${STG}
+}
+
+trunk_stg_prd () {
+     rsync -a --delete ${TRUNK} ${STG}
+     rsync -a --delete ${TRUNK} ${PRD}
+}
+
+
+while getopts sph OPTIONS ; do
+        case ${OPTIONS} in
+                s)
+                        trunk_stg
+                        echo 'You need to add, commit and push your changes to git now'
+                        echo 'cd /etc/puppet/env first'
+                        ;;
+                p)
+                        trunk_stg_prd
+                        echo 'You need to add, commit and push your changes to git now'
+                        echo 'cd /etc/puppet/env first'
+                        ;;
+                *)
+                        echo '2 options are -s for stg and -p for stg and prd'
+                        ;;
+        esac
+done

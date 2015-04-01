@@ -1,0 +1,8 @@
+
+This will be the first host to be built. 
+
+Then pulp, puppet and foreman.
+
+This cannot be totally built with puppet from scratch.
+
+This needs to be boot strapped and then pointed to puppet to finish off the job.

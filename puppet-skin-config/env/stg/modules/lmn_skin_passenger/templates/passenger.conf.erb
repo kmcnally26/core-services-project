@@ -1,0 +1,53 @@
+#
+# This file is managed by puppet.
+#
+
+# Default VirtualHost - for Puppetmaster on Passenger
+ 
+# Load the passenger module
+LoadModule passenger_module /usr/lib/ruby/gems/1.8/gems/passenger-4.0.37/buildout/apache2/mod_passenger.so
+# Define the passenger root directory
+PassengerRoot /usr/lib/ruby/gems/1.8/gems/passenger-4.0.37
+# Specify the path to the default ruby interpreter
+PassengerDefaultRuby /usr/bin/ruby
+ 
+# Turn passenger high performance settings on
+PassengerHighPerformance On
+# Set this to ~1.5 times the number of CPU cores on master system
+PassengerMaxPoolSize 2
+# Recycle master processes after they service 1000 requests
+PassengerMaxRequests 1000
+# Stop processes if they sit idle for 10 minutes
+PassengerPoolIdleTime 600
+ 
+# Set up the apache virtual host
+Listen 8140
+<VirtualHost *:8140>
+    SSLEngine On
+ 
+    # Only allow high security cryptography. Alter if needed for compatibility.
+    SSLProtocol             All -SSLv2
+    SSLCipherSuite          HIGH:!ADH:RC4+RSA:-MEDIUM:-LOW:-EXP
+    SSLCertificateFile      /var/lib/puppet/ssl/certs/puppet.example.com.pem
+    SSLCertificateKeyFile   /var/lib/puppet/ssl/private_keys/puppet.example.com.pem
+    SSLCertificateChainFile /var/lib/puppet/ssl/ca/ca_crt.pem
+    SSLCACertificateFile    /var/lib/puppet/ssl/ca/ca_crt.pem
+    SSLCARevocationFile     /var/lib/puppet/ssl/ca/ca_crl.pem
+    SSLVerifyClient         optional
+    SSLVerifyDepth          1
+    SSLOptions              +StdEnvVars +ExportCertData
+ 
+    # These request headers are used to pass the client certificate
+    # authentication information on to the puppet master process
+    RequestHeader set X-SSL-Subject %{SSL_CLIENT_S_DN}e
+    RequestHeader set X-Client-DN %{SSL_CLIENT_S_DN}e
+    RequestHeader set X-Client-Verify %{SSL_CLIENT_VERIFY}e
+ 
+    DocumentRoot /var/lib/puppet/rack/puppetmasterd/public
+    <Directory /var/lib/puppet/rack/puppetmasterd>
+        Options None
+        AllowOverride None
+        Order allow,deny
+        allow from all
+    </Directory>
+</VirtualHost>

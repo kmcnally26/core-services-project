@@ -1,0 +1,17 @@
+$ORIGIN .
+$TTL 86400	; 1 day
+example.com		IN SOA	dns.example.com. kevinmcnally26.example.com. (
+				2012099955 ; serial
+				43200      ; refresh (12 hours)
+				3600       ; retry (1 hour)
+				1209600    ; expire (2 weeks)
+				86400      ; minimum (1 day)
+				)
+			NS	dns.example.com.
+			MX	10 mail.example.com.
+$ORIGIN example.com.
+dns		        A	172.16.105.150
+foreman  		A	172.16.105.133
+kickstart		A	172.16.105.130
+pulp			A	172.16.105.132
+puppet			A	172.16.105.131

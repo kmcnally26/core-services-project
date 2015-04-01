@@ -1,0 +1,22 @@
+#
+# This file is managed by puppet.
+#
+
+# .bashrc
+
+# User specific aliases and functions
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias vi='vim'
+alias ifc='ifconfig'
+alias pup='puppet agent -t'
+
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[31m\]\W\[\033[m\]\$ "
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+

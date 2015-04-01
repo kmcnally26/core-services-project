@@ -1,0 +1,22 @@
+#
+# This file is managed by puppet
+#
+
+[main]
+logdir=/var/log/puppet
+vardir=/var/lib/puppet
+ssldir=/var/lib/puppet/ssl
+rundir=/var/run/puppet
+privatekeydir = $ssldir/private_keys { group = service }
+hostprivkey = $privatekeydir/$certname.pem { mode = 640 }
+
+# This is for puppet apply to send reports to foreman
+# Requires /usr/lib/ruby/site_ruby/1.8/puppet/reports/foreman.rb on the client
+reports=log, foreman
+
+[agent]
+server=puppet.example.com
+report=true
+pluginsync=true
+environment=prd
+certname=<%= @fqdn %>

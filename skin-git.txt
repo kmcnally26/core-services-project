@@ -1,0 +1,105 @@
+SKIN GIT
+==============
+So currently I have the master git repo for puppet on github
+
+Most of the puppet work is done.
+
+The work laptop is going to be used more from now on for SKIN work
+
+So you cannot commit puppet changes without access to github
+Which means clients wont get changes
+Puppet runs will still work but no changes are applied unless you run to trunk
+
+
+Pre github below
+
+
+LOCAL GIT REPO ON PUPPET
+The correct setup would be
+git master repo
+puppet master push/pull to git master
+client pull only from git master
+client does not interact with puppetmaster on git master
+client does puppet runs with puppet apply locally
+reports go to foreman
+
+
+My setup so far
+
+PUPPET COOKBOOK WAY?
+This is similar to how it is setup in the puppet cookbook
+Not exactly the same
+
+
+MASTER CLONE
+We are only cloning the env/ directory to /etc/puppet/
+master git repo on puppet master at /var/git/env.git
+
+WHERE TO EDIT PUPPET CODE
+You only edit puppet code on the puppetmaster
+Not on clients
+Clients only PULL
+Puppet master PUSH's changes to the master repo
+Clients only get /etc/puppet/env/ from the repo
+The rest of the local puppet config is normal.
+
+
+GIT MASTER REPO 
+Puppet master lets initialize env/
+So far we have our puppet config:
+ls /etc/puppet
+auth.conf  env  fileserver.conf  foreman_enc.rb  manifests  puppet.conf
+
+INITIALIZE THE SOURCE DIRECTORY
+Initialize existing env/ dir:
+cd /etc/puppet/env
+git init
+git add -A
+git commit
+
+CLONE SOURCE DIR TO MASTER REPO AT /VAR/GIT
+clone to master repo which for us is on same host:
+cd /var/git
+git clone --bare /etc/puppet/env
+Initialized empty Git repository in /var/git/env.git/
+ls
+env.git
+
+You will have to remove /etc/puppet/env now and clone it from the new repo
+This way you will be able to pull and push
+cd /etc/puppet
+mv env/ /opt/
+git clone puppet:/var/git/env.git /etc/puppet/env
+
+
+
+CLIENT SETUP
+This is what the client needs to run
+git clone puppet:/var/git/env.git /etc/puppet/env
+
+
+The script
+# Puppet Name: Git pull and Puppet apply
+*/10 * * * * /usr/local/bin/papply
+
+
+root@pulp:~$ cat /usr/local/bin/papply 
+#!/bin/bash
+# Pull git and do a puppet run locally, then send report
+MY_ENV=/etc/puppet/env/prd
+cd $MY_ENV
+git pull
+puppet apply  --modulepath=${MY_ENV}/modules ${MY_ENV}/manifests/site.pp
+exit 0
+
+
+
+
+Each client needs this added to puppet.conf
+[main]
+# This is for puppet apply to send reports to foreman
+# Requires /usr/lib/ruby/site_ruby/1.8/puppet/reports/foreman.rb on the client
+reports=log, foreman
+
+
+

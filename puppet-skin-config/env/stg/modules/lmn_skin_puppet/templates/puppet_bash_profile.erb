@@ -1,0 +1,30 @@
+#
+# This file is managed by puppet
+#
+#
+
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/bin
+
+export PATH
+
+## Extras for puppet server
+if [ -f /etc/bash_completion ]; then
+        . /etc/bash_completion
+fi
+
+if [ -f /usr/local/bin/lmn-cd ]; then
+        . /usr/local/bin/lmn-cd
+fi
+
+if [ -f /usr/local/bin/lmn-tag ]; then
+        . /usr/local/bin/lmn-tag
+fi

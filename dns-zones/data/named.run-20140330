@@ -1,0 +1,1684 @@
+reloading configuration succeeded
+reloading zones succeeded
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+managed-keys-zone ./IN: Unable to fetch DNSKEY set '.': timed out
+managed-keys-zone ./IN: Unable to fetch DNSKEY set 'dlv.isc.org': timed out
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+managed-keys-zone ./IN: Unable to fetch DNSKEY set '.': timed out
+managed-keys-zone ./IN: Unable to fetch DNSKEY set 'dlv.isc.org': timed out
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+managed-keys-zone ./IN: Unable to fetch DNSKEY set '.': timed out
+managed-keys-zone ./IN: Unable to fetch DNSKEY set 'dlv.isc.org': timed out
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+managed-keys-zone ./IN: Unable to fetch DNSKEY set '.': timed out
+managed-keys-zone ./IN: Unable to fetch DNSKEY set 'dlv.isc.org': timed out
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+managed-keys-zone ./IN: Unable to fetch DNSKEY set '.': timed out
+managed-keys-zone ./IN: Unable to fetch DNSKEY set 'dlv.isc.org': timed out
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+managed-keys-zone ./IN: Unable to fetch DNSKEY set '.': timed out
+managed-keys-zone ./IN: Unable to fetch DNSKEY set 'dlv.isc.org': timed out
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+shutting down
+stopping command channel on 127.0.0.1#953
+stopping command channel on ::1#953
+no longer listening on 172.16.105.134#53
+no longer listening on ::1#53
+exiting
+zone 0.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+zone 105.16.172.in-addr.arpa/IN: loaded serial 2012099914
+zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+zone example.com/IN: loaded serial 2012099914
+zone localhost.localdomain/IN: loaded serial 0
+zone localhost/IN: loaded serial 0
+managed-keys-zone ./IN: loaded serial 91
+running
+shutting down
+no longer listening on 172.16.105.134#53
+no longer listening on ::1#53
+exiting
+zone 0.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+zone 105.16.172.in-addr.arpa/IN: loaded serial 2012099914
+zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+zone example.com/IN: loaded serial 2012099914
+zone localhost.localdomain/IN: loaded serial 0
+zone localhost/IN: loaded serial 0
+managed-keys-zone ./IN: loaded serial 91
+running
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+managed-keys-zone ./IN: Unable to fetch DNSKEY set '.': timed out
+managed-keys-zone ./IN: Unable to fetch DNSKEY set 'dlv.isc.org': timed out
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+received control channel command 'stop'
+shutting down: flushing changes
+stopping command channel on 127.0.0.1#953
+stopping command channel on ::1#953
+no longer listening on 172.16.105.134#53
+no longer listening on ::1#53
+exiting
+zone 0.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+zone 105.16.172.in-addr.arpa/IN: loaded serial 2012099914
+zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+zone example.com/IN: example.com/MX 'mail.example.com' has no address records (A or AAAA)
+zone example.com/IN: loaded serial 2012099914
+zone localhost.localdomain/IN: loaded serial 0
+zone localhost/IN: loaded serial 0
+managed-keys-zone ./IN: loaded serial 93
+running
+received control channel command 'stop'
+shutting down: flushing changes
+stopping command channel on 127.0.0.1#953
+stopping command channel on ::1#953
+no longer listening on 172.16.105.134#53
+no longer listening on ::1#53
+exiting
+zone 0.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+zone 105.16.172.in-addr.arpa/IN: loaded serial 2012099914
+zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+zone example.com/IN: example.com/MX 'mail.example.com' has no address records (A or AAAA)
+zone example.com/IN: loaded serial 2012099914
+zone localhost.localdomain/IN: loaded serial 0
+zone localhost/IN: loaded serial 0
+managed-keys-zone ./IN: loaded serial 93
+running
+error (network unreachable) resolving 'ftp.mirrorservice.org/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mirrors.ukfast.co.uk/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mirrors.fedoraproject.org.uk/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mirror.vorboss.net/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mirror.bytemark.co.uk/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'ftp.rediris.es/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mirror.nsc.liu.se/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mirror.datacenter.by/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'ftp.acc.umu.se/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mirror.uv.es/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'ftp.heanet.ie/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'ftp-stud.hs-esslingen.de/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'fr2.rpmfind.net/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'ftp.mirrorservice.org/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirrors.ukfast.co.uk/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirrors.fedoraproject.org.uk/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirror.vorboss.net/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirror.bytemark.co.uk/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'ftp.rediris.es/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirror.nsc.liu.se/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirror.datacenter.by/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'ftp.acc.umu.se/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirror.uv.es/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'ftp.heanet.ie/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'ftp-stud.hs-esslingen.de/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'fr2.rpmfind.net/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'ftp.mirrorservice.org/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mirrors.ukfast.co.uk/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mirrors.fedoraproject.org.uk/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mirror.vorboss.net/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mirror.bytemark.co.uk/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'ftp.rediris.es/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mirror.nsc.liu.se/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mirror.datacenter.by/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'ftp.acc.umu.se/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mirror.uv.es/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'fr2.rpmfind.net/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'ftp.heanet.ie/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'ftp-stud.hs-esslingen.de/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'ftp.mirrorservice.org/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mirrors.ukfast.co.uk/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'ftp.rediris.es/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mirrors.fedoraproject.org.uk/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mirror.vorboss.net/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mirror.bytemark.co.uk/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mirror.nsc.liu.se/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mirror.datacenter.by/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'ftp.acc.umu.se/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mirror.uv.es/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'fr2.rpmfind.net/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'ftp.heanet.ie/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'ftp-stud.hs-esslingen.de/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'ftp.mirrorservice.org/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'ftp.mirrorservice.org/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mirrors.ukfast.co.uk/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirrors.ukfast.co.uk/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'ftp.rediris.es/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirrors.fedoraproject.org.uk/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirror.vorboss.net/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirror.vorboss.net/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mirror.bytemark.co.uk/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirror.bytemark.co.uk/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'ftp-stud.hs-esslingen.de/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'ftp.heanet.ie/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirror.nsc.liu.se/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirror.datacenter.by/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'ftp.rediris.es/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'ftp.acc.umu.se/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'ftp.acc.umu.se/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mirror.uv.es/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'fr2.rpmfind.net/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirrors.fedoraproject.org.uk/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'ftp-stud.hs-esslingen.de/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'ftp.heanet.ie/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mirror.nsc.liu.se/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mirror.datacenter.by/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mirror.uv.es/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'fr2.rpmfind.net/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'download.fedoraproject.org/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'download.fedoraproject.org/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'anorien.csc.warwick.ac.uk/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'www.mirrorservice.org/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'download.fedoraproject.org/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'anorien.csc.warwick.ac.uk/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'www.mirrorservice.org/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'download.fedoraproject.org/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'anorien.csc.warwick.ac.uk/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'www.mirrorservice.org/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'download.fedoraproject.org/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'anorien.csc.warwick.ac.uk/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'www.mirrorservice.org/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'download.fedoraproject.org/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'anorien.csc.warwick.ac.uk/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'www.mirrorservice.org/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'anorien.csc.warwick.ac.uk/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'www.mirrorservice.org/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirror.serverbeheren.nl/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mirror.serverbeheren.nl/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mirror.serverbeheren.nl/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mirror.serverbeheren.nl/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirror.switch.ch/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mirror.switch.ch/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mirror.switch.ch/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'ftp.ntua.gr/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'ftp.ntua.gr/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'ftp.ntua.gr/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'ftp.fi.muni.cz/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'ftp.fi.muni.cz/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'ftp.fi.muni.cz/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'ftp.linux.cz/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'ftp.linux.cz/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'ftp.linux.cz/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirrors.neterra.net/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mirrors.neterra.net/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'ftp.colocall.net/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'ftp.colocall.net/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mirrors.neterra.net/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'ftp.colocall.net/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirror.karneval.cz/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mirror.karneval.cz/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mirror.karneval.cz/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirror.oss.maxcdn.com/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mirror.oss.maxcdn.com/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mirror.oss.maxcdn.com/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'ftp.nluug.nl/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'ftp.nluug.nl/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'ftp.nluug.nl/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'ftp.uni-kl.de/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'ftp.uni-kl.de/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'ftp.uni-kl.de/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'ftp.cc.uoc.gr/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'ftp.cc.uoc.gr/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'repo.boun.edu.tr/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'repo.boun.edu.tr/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'ftp.cc.uoc.gr/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'repo.boun.edu.tr/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'fedora.tu-chemnitz.de/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'fedora.tu-chemnitz.de/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'ftp.lysator.liu.se/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'ftp.lysator.liu.se/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'fedora.tu-chemnitz.de/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'ftp.lysator.liu.se/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'fedora.uib.no/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'fedora.uib.no/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'fedora.uib.no/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirror.serverbeheren.nl/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'ftp.ntua.gr/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mirror.switch.ch/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'ftp.fi.muni.cz/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'ftp.linux.cz/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mirrors.neterra.net/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mirror.karneval.cz/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'ftp.colocall.net/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mirror.oss.maxcdn.com/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'ftp.nluug.nl/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'ftp.uni-kl.de/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'ftp.cc.uoc.gr/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'repo.boun.edu.tr/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'fedora.tu-chemnitz.de/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'ftp.lysator.liu.se/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'fedora.uib.no/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'ftp.ntua.gr/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mirror.switch.ch/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'ftp.fi.muni.cz/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'ftp.linux.cz/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mirrors.neterra.net/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'ftp.colocall.net/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mirror.oss.maxcdn.com/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'ftp.nluug.nl/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'ftp.cc.uoc.gr/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'repo.boun.edu.tr/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mirror.karneval.cz/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'ftp.uni-kl.de/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'fedora.tu-chemnitz.de/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'ftp.lysator.liu.se/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'fedora.uib.no/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'ftp.ntua.gr/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirror.switch.ch/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'ftp.fi.muni.cz/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'ftp.linux.cz/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirrors.neterra.net/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'ftp.colocall.net/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirror.oss.maxcdn.com/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'ftp.nluug.nl/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'ftp.cc.uoc.gr/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'repo.boun.edu.tr/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'fedora.tu-chemnitz.de/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'ftp.lysator.liu.se/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'fedora.uib.no/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirror.karneval.cz/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'ftp.uni-kl.de/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirror.serverbeheren.nl/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'ftp.pbone.net/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'ftp.pbone.net/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'ftp.pbone.net/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mirror.zetup.net/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'www.fedora.is/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'ftp.fedora.is/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mirror.de.leaseweb.net/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'ftp.crc.dk/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mirror.euserv.net/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mirror.duomenucentras.lt/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mirror.slu.cz/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'ftp.uninett.no/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'ftp.icm.edu.pl/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mirrors.ircam.fr/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mirrors.n-ix.net/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'fedora.mirrors.romtelecom.ro/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mir01.syntis.net/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mirror.proserve.nl/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'ftp.pbone.net/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'ftp.pbone.net/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mirror.zetup.net/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mirror.zetup.net/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'www.fedora.is/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'www.fedora.is/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'ftp.pbone.net/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'ftp.fedora.is/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'ftp.fedora.is/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mirror.de.leaseweb.net/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mirror.de.leaseweb.net/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mirror.zetup.net/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'www.fedora.is/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'ftp.crc.dk/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'ftp.crc.dk/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mirror.euserv.net/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mirror.euserv.net/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'ftp.fedora.is/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirror.de.leaseweb.net/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirror.duomenucentras.lt/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mirror.duomenucentras.lt/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mirror.slu.cz/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mirrors.ircam.fr/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'ftp.uninett.no/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'ftp.uninett.no/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'ftp.icm.edu.pl/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'ftp.icm.edu.pl/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'ftp.crc.dk/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirrors.n-ix.net/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mirrors.n-ix.net/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mirror.euserv.net/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'fedora.mirrors.romtelecom.ro/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'fedora.mirrors.romtelecom.ro/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mir01.syntis.net/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mir01.syntis.net/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mir01.syntis.net/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirror.duomenucentras.lt/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirror.proserve.nl/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mirror.proserve.nl/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mirror.slu.cz/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mirrors.ircam.fr/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'ftp.uninett.no/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'ftp.icm.edu.pl/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirrors.n-ix.net/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'fedora.mirrors.romtelecom.ro/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirror.proserve.nl/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirror.slu.cz/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirrors.ircam.fr/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirror.zetup.net/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mirror.zetup.net/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'www.fedora.is/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'www.fedora.is/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'ftp.fedora.is/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'ftp.fedora.is/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirror.de.leaseweb.net/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mirror.de.leaseweb.net/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'ftp.crc.dk/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'ftp.crc.dk/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirror.euserv.net/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mirror.euserv.net/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mir01.syntis.net/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mir01.syntis.net/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirror.duomenucentras.lt/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mirror.duomenucentras.lt/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'ftp.uninett.no/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'ftp.uninett.no/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'ftp.icm.edu.pl/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'ftp.icm.edu.pl/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirrors.n-ix.net/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mirrors.n-ix.net/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'fedora.mirrors.romtelecom.ro/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'fedora.mirrors.romtelecom.ro/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirror.proserve.nl/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mirror.proserve.nl/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirror.slu.cz/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mirrors.ircam.fr/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mirror.slu.cz/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirrors.ircam.fr/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirror.omnilance.com/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mirror.omnilance.com/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'vesta.informatik.rwth-aachen.de/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'vesta.informatik.rwth-aachen.de/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'ftp.linux.org.tr/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'ftp.linux.org.tr/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'fedora.aau.at/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'be.mirror.eurid.eu/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mirror.omnilance.com/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'vesta.informatik.rwth-aachen.de/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'ftp.linux.org.tr/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'fedora.aau.at/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'be.mirror.eurid.eu/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'fedora-epel.skarta.net/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'fedora-epel.skarta.net/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mirror.fraunhofer.de/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mirror.fraunhofer.de/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mirror.ibcp.fr/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mirror.ibcp.fr/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'mirror.digitalnova.at/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'mirror.digitalnova.at/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'fedora.aau.at/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'be.mirror.eurid.eu/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'fedora-epel.skarta.net/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirror.fraunhofer.de/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirror.ibcp.fr/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'mirror.digitalnova.at/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirror.omnilance.com/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mirror.omnilance.com/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'vesta.informatik.rwth-aachen.de/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'vesta.informatik.rwth-aachen.de/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'ftp.linux.org.tr/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'ftp.linux.org.tr/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'fedora.aau.at/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'be.mirror.eurid.eu/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'fedora-epel.skarta.net/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'fedora-epel.skarta.net/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirror.fraunhofer.de/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mirror.fraunhofer.de/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'fedora.aau.at/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'be.mirror.eurid.eu/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirror.ibcp.fr/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mirror.ibcp.fr/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirror.digitalnova.at/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'mirror.digitalnova.at/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'mirror.omnilance.com/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'vesta.informatik.rwth-aachen.de/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'ftp.linux.org.tr/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'fedora-epel.skarta.net/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mirror.fraunhofer.de/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'fedora.aau.at/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'be.mirror.eurid.eu/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mirror.ibcp.fr/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'mirror.digitalnova.at/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'be.mirror.eurid.eu/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'be.mirror.eurid.eu/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'be.mirror.eurid.eu/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'be.mirror.eurid.eu/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'download.fedoraproject.org/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'download.fedoraproject.org/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'be.mirror.eurid.eu/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'download.fedoraproject.org/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'download.fedoraproject.org/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'download.fedoraproject.org/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'download.fedoraproject.org/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'download.fedoraproject.org/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'download.fedoraproject.org/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'fedora-epel.skarta.net/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'fedora-epel.skarta.net/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'fedora-epel.skarta.net/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'fedora-epel.skarta.net/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'fedora.aau.at/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'fedora.aau.at/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'fedora.aau.at/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'fedora.aau.at/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'fedora.aau.at/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'fedora.aau.at/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'fedora.aau.at/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'fedora.aau.at/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'fedora.aau.at/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'fedora.aau.at/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'fedora.mirrors.romtelecom.ro/A/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'fedora.mirrors.romtelecom.ro/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'fedora.tu-chemnitz.de/A/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'fedora.tu-chemnitz.de/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'fedora.tu-chemnitz.de/A/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'fedora.tu-chemnitz.de/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'fedora.tu-chemnitz.de/A/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'fedora.tu-chemnitz.de/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'fedora.tu-chemnitz.de/A/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'fedora.tu-chemnitz.de/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'fedora.tu-chemnitz.de/A/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'fedora.tu-chemnitz.de/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:dc3::35#53
+managed-keys-zone ./IN: Unable to fetch DNSKEY set '.': timed out
+managed-keys-zone ./IN: Unable to fetch DNSKEY set 'dlv.isc.org': timed out
+received control channel command 'reload'
+loading configuration from '/etc/named.conf'
+/etc/named.conf:9: expected IP address near 'any'
+reloading configuration failed: unexpected token
+received SIGHUP signal to reload zones
+loading configuration from '/etc/named.conf'
+/etc/named.conf:9: expected IP address near 'any'
+reloading configuration failed: unexpected token
+received control channel command 'stop'
+shutting down: flushing changes
+stopping command channel on 127.0.0.1#953
+stopping command channel on ::1#953
+no longer listening on 172.16.105.134#53
+no longer listening on ::1#53
+exiting
+zone 0.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+zone 105.16.172.in-addr.arpa/IN: loaded serial 2012099914
+zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+zone example.com/IN: loaded serial 2012099914
+zone localhost.localdomain/IN: loaded serial 0
+zone localhost/IN: loaded serial 0
+managed-keys-zone ./IN: loaded serial 99
+running
+error (network unreachable) resolving './DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+managed-keys-zone ./IN: Unable to fetch DNSKEY set '.': timed out
+managed-keys-zone ./IN: Unable to fetch DNSKEY set 'dlv.isc.org': timed out
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+received control channel command 'stop'
+shutting down: flushing changes
+stopping command channel on 127.0.0.1#953
+stopping command channel on ::1#953
+no longer listening on 172.16.105.134#53
+no longer listening on ::1#53
+exiting
+zone 0.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+zone 105.16.172.in-addr.arpa/IN: loaded serial 2012099914
+zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+zone example.com/IN: loaded serial 2012099914
+zone localhost.localdomain/IN: loaded serial 0
+zone localhost/IN: loaded serial 0
+managed-keys-zone ./IN: loaded serial 102
+running
+error (network unreachable) resolving './DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+managed-keys-zone ./IN: Unable to fetch DNSKEY set '.': timed out
+managed-keys-zone ./IN: Unable to fetch DNSKEY set 'dlv.isc.org': timed out
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+managed-keys-zone ./IN: Unable to fetch DNSKEY set '.': timed out
+managed-keys-zone ./IN: Unable to fetch DNSKEY set 'dlv.isc.org': timed out
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+managed-keys-zone ./IN: Unable to fetch DNSKEY set '.': timed out
+managed-keys-zone ./IN: Unable to fetch DNSKEY set 'dlv.isc.org': timed out
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+managed-keys-zone ./IN: Unable to fetch DNSKEY set '.': timed out
+managed-keys-zone ./IN: Unable to fetch DNSKEY set 'dlv.isc.org': timed out
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+managed-keys-zone ./IN: Unable to fetch DNSKEY set '.': timed out
+managed-keys-zone ./IN: Unable to fetch DNSKEY set 'dlv.isc.org': timed out
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+received control channel command 'stop'
+shutting down: flushing changes
+stopping command channel on 127.0.0.1#953
+stopping command channel on ::1#953
+no longer listening on 172.16.105.134#53
+no longer listening on ::1#53
+exiting
+zone 0.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+zone 105.16.172.in-addr.arpa/IN: loaded serial 2012099914
+zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+zone example.com/IN: loaded serial 2012099914
+zone localhost.localdomain/IN: loaded serial 0
+zone localhost/IN: loaded serial 0
+managed-keys-zone ./IN: loaded serial 112
+running
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+managed-keys-zone ./IN: Unable to fetch DNSKEY set '.': timed out
+managed-keys-zone ./IN: Unable to fetch DNSKEY set 'dlv.isc.org': timed out
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+managed-keys-zone ./IN: Unable to fetch DNSKEY set '.': timed out
+managed-keys-zone ./IN: Unable to fetch DNSKEY set 'dlv.isc.org': timed out
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+received control channel command 'stop'
+shutting down: flushing changes
+stopping command channel on 127.0.0.1#953
+stopping command channel on ::1#953
+no longer listening on 172.16.105.134#53
+no longer listening on ::1#53
+exiting
+zone 0.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+zone 105.16.172.in-addr.arpa/IN: loaded serial 2012099914
+zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+zone example.com/IN: loaded serial 2012099914
+zone localhost.localdomain/IN: loaded serial 0
+zone localhost/IN: loaded serial 0
+managed-keys-zone ./IN: loaded serial 116
+running
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:dc3::35#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './DNSKEY/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:2f::f#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:7fd::1#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:dc3::35#53
+error (network unreachable) resolving 'B.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'C.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'D.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'E.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'G.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'I.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving 'L.ROOT-SERVERS.NET/AAAA/IN': 2001:500:1::803f:235#53
+managed-keys-zone ./IN: Unable to fetch DNSKEY set '.': timed out
+managed-keys-zone ./IN: Unable to fetch DNSKEY set 'dlv.isc.org': timed out
+error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53
+error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53
+error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53
+error (network unreachable) resolving './NS/IN': 2001:7fd::1#53
+error (network unreachable) resolving './NS/IN': 2001:dc3::35#53
+received control channel command 'reload'
+loading configuration from '/etc/named.conf'
+reading built-in trusted keys from file '/etc/named.iscdlv.key'
+using default UDP/IPv4 port range: [1024, 65535]
+using default UDP/IPv6 port range: [1024, 65535]
+sizing zone task pool based on 8 zones
+using built-in DLV key for view _default
+Warning: 'empty-zones-enable/disable-empty-zone' not set: disabling RFC 1918 empty zones

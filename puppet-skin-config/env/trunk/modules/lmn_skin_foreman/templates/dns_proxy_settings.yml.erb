@@ -1,0 +1,21 @@
+---
+# This file is managed by puppet.
+#
+
+# SSL Setup
+
+:ssl_certificate: /var/lib/puppet/ssl/certs/<%= @fqdn %>.pem
+:ssl_ca_file: /var/lib/puppet/ssl/certs/ca.pem
+:ssl_private_key: /var/lib/puppet/ssl/private_keys/<%= @fqdn %>.pem
+:daemon: true
+:daemon_pid: /var/run/foreman-proxy/foreman-proxy.pid
+:port: 8443
+
+# This is my DNS setup that works
+:dns: true
+:dns_provider: nsupdate
+:dns_key: /etc/foreman-proxy/rndc.key
+:dns_server: <%= @fqdn %>
+
+:log_file: /var/log/foreman-proxy/proxy.log
+:log_level: DEBUG

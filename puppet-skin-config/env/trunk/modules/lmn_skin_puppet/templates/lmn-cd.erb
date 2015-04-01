@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# <kevin.mcnally@lastminute.com>
+# 2014-04-14
+# Script: lmn-cd used to change to either manifests or modules in trunk
+# Any changes to this file need to be sourced to take affect
+
+function lmn-cd() {
+
+case ${1} in
+
+    m*)
+          cd /etc/puppet/env/trunk/${1}
+          ;;
+    lmn*)
+          cd /etc/puppet/env/trunk/modules/${1}
+          ;;
+       *)
+          echo 'Not a valid argument use bash completion' 
+        ;;
+
+esac
+
+
+}
+
+function _lmn-cd-completion() {
+    local cur prev opts
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+    opts="modules manifests lmn_skin_gitclient lmn_skin_puppet lmn_skin_soe lmn_skin_kickstart lmn_skin_pulp lmn_skin_foreman lmn_skin_dnsmaster"
+
+    COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+
+}
+
+complete -F _lmn-cd-completion lmn-cd

@@ -1,0 +1,250 @@
+Jenkins Master
+=================
+To install jenkins just install the rpm and start the service.
+
+Repo
+wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+Only 1 package
+
+
+http://IPADDR:8080
+Jenkins listens on 0.0.0.0 by default
+Set proxy on web browser and in jenkins so you can get updates and plugins
+/var/log/jenkins/jenkins.log
+
+/etc/sysconfig/jenkins
+You can set JENKINS_HOME from here to eg /opt/jenkins
+The users home is still the default /var/lib/jenkins
+
+
+Jenkins user: 
+By default the user has no shell
+You can work as jenkins by su - -s /bin/bash jenkins as root
+This user needs access to eg. JDK etc which it will have if you install stuff from the GUI
+If root installs with yum then jenkins may not see stuff eg. JAVA_HOME
+
+
+GUI config
+===========
+
+You may see paths in red which will go once a build is run as maybe the location does not exist
+
+Plugins
+You need INET access when installing these
+
+
+Maven
+Maven will be installed from the apache site the first time it is needed for a build
+After that its available to all jobs
+You will see it available in the Maven Version section by whatever you named it in the main config
+You need INET access at that point but not after that
+/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven-3.2.1/bin/mvn
+
+
+
+JDK
+From the GUI:
+You can download this in the GUI from Oracle but you need an account
+jenkins@jenkins:~$ ls tools/hudson.model.JDK/bin/ja
+jar             java            javadoc         javah           java-rmi.cgi    
+jarsigner       javac           javafxpackager  javap           javaws 
+
+
+Yum JDK rom the CLI:
+yum install java-1.7.0-openjdk java-1.7.0-openjdk-devel
+
+devel has most of the build binaries like jar etc
+
+Add this to roots .bashrc if needed. Will be seen by jenkins user as well
+export JAVA_HOME="/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.45.x86_64"
+
+SSH
+SSH as jenkins to root@puppet
+I had to add this to get the git repo to sync
+jenkins@jenkins:~$ ssh-keygen
+jenkins@jenkins:~$ ssh-copy-id root@puppet
+
+
+GIT
+Get the git plugin
+
+My local setup:
+The source code for example-web-app is at puppet:/root
+The repo is at /var/git/example-web-app.git
+
+The URL to clone the source code is
+root@172.16.105.131:/var/git/example-web-app.git
+See above for ssh keys to sync repo
+
+CODE CHANGES
+Make changes in the build/ dir and then create the war file
+$ ls example-web-app/
+build  example-web-app-1.1.war
+$ ls example-web-app/build/
+hello.jsp  images  index.html  META-INF  WEB-INF
+$ jar -cf example-web-app-1.1.war build/* 
+$ git add example-web-app-1.1.war
+$ git commit and then push
+
+
+
+PULP ADMIN CLIENT
+yum groupinstall pulp-admin -y
+Then add the pulp master hostname to the clients /etc/pulp/admin/admin.conf
+No need for SSH keys (I think)
+The certs for a client last 7 days by default
+Set up a cron pulp-admin login -u admin -p admin
+Give jenkins sudo to run this
+
+
+Creating a pipeline and related jobs
+========================================
+First:
+
+Create each job seperately and then link them. So you need to create all steps first then tie them to each other
+
+Post build to trigger next job and NOT "Build after other projects are built"
+
+
+
+LMN-App               - svn up on source code and if it has changed, pull in a new copy and build it
+
+https://kmcnally26@github.com/kmcnally26/example-web-app.git or git@github.com:kmcnally26/example-web-app.git
+
+For ssh add your public key to github deploy keys section
+
+#####################################################################################
+
+Example-App-Rpm           - copy artifacts from upstream job and package the .war files to an rpm
+
+
+set -e
+env
+
+WORKSPACE=/var/lib/jenkins/jobs/Example-Web-App-Rpm/workspace
+RPM_TOPDIR=$WORKSPACE/rpmbuild
+
+###rm -f $WORKSPACE/*war
+
+EXAMPLE_WEB_APP_VERSION=$(ls -rb ${WORKSPACE}/example-web-app*.war | awk -F - '{print $7}' | sed 's/\.war//')
+EXAMPLE_WEB_APP_PKGDIST=$COPYARTIFACT_BUILD_NUMBER_EXAMPLE_WEB_APP
+EXAMPLE_WEB_APP_RPMNAME="example-web-app-${EXAMPLE_WEB_APP_VERSION}-${EXAMPLE_WEB_APP_PKGDIST}.noarch.rpm"
+EXAMPLE_WEB_APP_ARCH=noarch
+
+## This is goes to package.prop file where the upstream jobs will get these values
+echo "EXAMPLE_WEB_APP_VERSION=$EXAMPLE_WEB_APP_VERSION" > package.prop
+echo "EXAMPLE_WEB_APP_PKGDIST=$EXAMPLE_WEB_APP_PKGDIST" >> package.prop
+
+if [ ! -f $RPM_TOPDIR/SOURCES ]; then
+  mkdir -p $RPM_TOPDIR/SOURCES
+fi
+
+cp $WORKSPACE/example-web-app*.war $RPM_TOPDIR/SOURCES
+/usr/bin/rpmbuild -bb --define "_topdir ${RPM_TOPDIR}" --define "version ${EXAMPLE_WEB_APP_VERSION}" --define "dist ${EXAMPLE_WEB_APP_PKGDIST}" /var/lib/jenkins/jobs/example-web-app.spec
+
+#####################################################################################
+
+LMN-App-Pulp          - upload the rpm to pulp repo
+
+set -e
+
+EXAMPLE_WEB_APP_VERSION=$EXAMPLE_WEB_APP_VERSION
+EXAMPLE_WEB_APP_PKGDIST=$EXAMPLE_WEB_APP_PKGDIST
+REPO_ID=release-example-web-app
+RPMBUILD_RPMS=${JENKINS_HOME}/jobs/Example-Web-App-Rpm/workspace/rpmbuild/RPMS/noarch/
+RPM_FILENAME="example-web-app-${EXAMPLE_WEB_APP_VERSION}-${EXAMPLE_WEB_APP_PKGDIST}.noarch.rpm"
+
+if [ "$EXAMPLE_WEB_APP_VERSION" != '' ] && [ "$EXAMPLE_WEB_APP_PKGDIST" != '' ] ; then
+## Upload rpm and update metadata
+  sudo pulp-admin rpm repo uploads rpm -f $RPMBUILD_RPMS/$RPM_FILENAME --repo-id $REPO_ID
+  sudo pulp-admin rpm repo publish run --repo-id $REPO_ID
+else
+  exit 1
+fi
+
+#####################################################################################
+
+LMN-App-Deploy        
+
+ssh root@www.example.com 'yum clean all && yum update example-web-app -y && service tomcat6 restart'
+
+#####################################################################################
+
+LMN-Site-Check
+
+wget -O /dev/null --no-cache http://www.example.com:8080/example-web-app/index.html
+
+#####################################################################################
+
+Example spec
+
+%define prefix      /var/lib
+%define webapp_name example-web-app
+%define webapps_dir %{prefix}/tomcat6/webapps
+ 
+Name:           %{webapp_name}
+Version:        %{?version}
+Release:        %{?dist}
+Summary:        %{name} Application
+ 
+Group:          Applications/Web
+License:        Proprietary example.com
+BuildArch:      noarch
+BuildRoot:      %{_tmppath}/%{name}-%{version}--buildroot
+Requires:       java >= 1.6
+ 
+Source0:        %{name}-%{version}*.war
+Prefix:         %{prefix}
+ 
+BuildRoot:           %{_tmppath}/%{name}-%{version}-root
+BuildArch:      noarch
+ 
+ 
+%description
+%{name} java server application.
+ 
+%prep
+%setup -c -T
+ 
+%install
+[ "%{buildroot}" != / ] && %{__rm} -rf "%{buildroot}"
+%{__mkdir_p} %{buildroot}%{webapps_dir}/%{webapp_name}
+(cd %{buildroot}%{webapps_dir}/%{webapp_name} && jar -xf %{SOURCE0})
+ 
+%clean
+[ "%{buildroot}" != / ] && %{__rm} -rf "%{buildroot}"
+ 
+%files
+%defattr(-,root,root,-)
+%{webapps_dir}/%{webapp_name}
+ 
+%post
+ 
+%preun
+
+
+#####################################################################################
+
+
+
+
+
+To link these we use the post build step to trigger the next job
+
+Trigger can be set to do if previous step completes or only do manually
+
+Pipeline:
+Add the Build Pipeline Plugin
+On jenkins home page click the + tab and select pipeline view, then 'Select Initial Job'
+Set 'No Of Displayed Builds' to eg 10 which shows the last 10 
+
+The subsequent jobs will be added to that pipeline with 'Build other projects'
+
+CLicking RUN on the pipeline view will create new pipeline and run all the jobs
+
+
+
+
+
+
+
