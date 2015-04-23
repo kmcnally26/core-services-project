@@ -6,6 +6,8 @@ SKIN FreeIPA IdM Identity Management
 Packages on DVD
 yum install ipa-server bind bind-dyndb-ldap
 
+Hosts file will get configured by install script. Double check.
+
 VERSION
 ipa-server-3.0.0-37.el6 
 
