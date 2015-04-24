@@ -21,8 +21,6 @@ IP address:    172.16.105.150
 Domain name:   example.com
 Realm name:    SKIN.EXAMPLE.COM
 
-PW clontibret1
-
 POST INSTALL
 service sshd restart
 
