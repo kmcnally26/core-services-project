@@ -45,48 +45,6 @@ RELATIVE PATHS FOR NEW REPOS
 Copy what you see at centos eg
 http://mirror.simwood.com/centos/7.0.1406/os/x86_64/
 
-
-LIST AND DETAIL
-pulp-admin repo list
-pulp-admin repo list --detail | less
-
-CREATE
-pulp-admin rpm repo create --feed http://www.mirrorservice.org/sites/mirror.centos.org/6.5/os/x86_64/Packages/  --repo-id base-centos-6.5-os --relative-url centos/6/os/x86_64/Packages --description "CentOS 6.5 OS"
-pulp-admin rpm repo create --repo-id release-example-web-app --relative-url centos/6/release/example-web-app/ --description "Example Web App"
-pulp-admin rpm repo create --repo-id external-foreman-1.5-release --relative-url centos/6/external/foreman-release/1.5/ --description "Foreman 1.5 Releases"
-pulp-admin rpm repo create --repo-id external-foreman-1.5-plugins --relative-url centos/6/external/foreman-plugins/1.5/ --description "Foreman 1.5 Plugins"
-pulp-admin rpm repo create --repo-id external-puppet-deps --relative-url centos/6/external/puppet/dependencies/ --feed http://yum.puppetlabs.com/el/6/dependencies/x86_64/ --description "Puppet Dependencies"
-pulp-admin rpm repo create --repo-id external-puppet --relative-url centos/6/external/puppet/products/ --feed http://yum.puppetlabs.com/el/6x/products/x86_64/ --description "Puppet Products"
-pulp-admin rpm repo create --feed http://mirror.centos.org/centos/6/SCL/x86_64/  --repo-id external-centos-SCL --relative-url centos/6/external/SCL --description "CentOS Software Collections"
-
-SYNC A REPO WITH ITS EXTERNAL SOURCE TO GET/UPDATE PACKAGES
-pulp-admin rpm repo sync run --repo-id external-foreman
-
-UPLOAD A FILE TO A REPO
-pulp-admin rpm repo uploads rpm -f rpmbuild/RPMS/noarch/example-web-app-1.0-22.noarch.rpm --repo-id release-example-web-app
-pulp-admin rpm repo publish run --repo-id release-example-web-app
-
-DELETE REPO
-pulp-admin rpm repo delete --repo-id skin-puppet.repo
-
-DELETE RPM
-pulp-admin rpm repo remove rpm --repo-id BASE-CentOS-6-OS --match 'name=java-1.7.0-openjdk' --match 'version=45-2.4.3.3.el6-x86_64'
-pulp-admin rpm repo publish run --repo-id BASE-CentOS-6-OS
-
-UPDATE SOMETHING
-pulp-admin rpm repo update --description "My CentOS 6.5 DVD repo" --repo-id base-os-centos-x86_64
-
-REMOVE ORPHANS
-pulp-admin orphan remove --all
-
-LIST CURRENT TASKS
-pulp-admin tasks list
-pulp-admin tasks cancel --task-id 844563d3-e4ee-4ebd-ba8b-add2b706e4b2
-
-SEARCHING REPOS FOR RPM INFO
-pulp-admin rpm repo content rpm --repo-id=external-foreman --match 'filename=^foreman-1.4*'
-This will also list all dependencies.
-
 MY REPOS
 All my repos have an external source
 If baseurl is wrong you get an SSL nickname error. Nothing needed in yum.conf. 
