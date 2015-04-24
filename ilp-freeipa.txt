@@ -44,16 +44,18 @@ IPA Server >> ID Ranges
 HBAC
 Also, by default, we are setting no HBAC (host based access control) rules, so no-one will be able to access the servers or clients
 
+CLIENT
+yum install ipa-client
+authconfig --enablemkhomedir --update
+ipa-client-install --domain example.com --server dns.example.com --mkhomedir
+
+
 HOMEDIRS
 Enable making home directory at log in:
 authconfig --enablemkhomedir --update
 This is important to do before you configure IPA, so that 
 when users log in their home directory is made. Doing 
-this after you've configured IPA on the box is a pain, so 
-do it now before you
-
-CLIENT
-ipa-client-install --domain example.com --server dns.example.com --mkhomedir --no-ssh --no-dns-sshfp --permit
+this after you've configured IPA on the box is a pain
 
 
 
