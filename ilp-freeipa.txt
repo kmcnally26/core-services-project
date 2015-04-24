@@ -38,7 +38,7 @@ admin / clontibret1
 
 Settings for shell
 IPA Server >> Configuration
-This was set to /bin/sh :-(
+Set to /bin/bash 
 
 Set UID ranges
 IPA Server >> ID Ranges 
@@ -48,21 +48,10 @@ ipa-client-install --domain example.com --server dns.example.com --mkhomedir --n
 
 User authorized to enroll computers: admin
 
+Enable making home directory at log in:
+authconfig --enablemkhomedir --update
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+This is important to do before you configure IPA, so that when users log in their home directory is made. Doing this after you've configured IPA on the box is a pain, so do it now before you
 
 Setup complete
 
