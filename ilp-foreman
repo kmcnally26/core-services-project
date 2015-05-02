@@ -118,6 +118,10 @@ For your custom templates set this to false in settings safemode_render
 
 Do not start try to build until you have the GUI completely done.
 
+PASSWORD RESET
+# foreman-rake permissions:reset PASSWORD=changeme 
+Apipie cache enabled but not present yet. Run apipie:cache rake task to speed up API calls.
+Reset to user: admin, password: BZqrZ2qEaqwvGD9F
 
 
 FOREMAN SMART PROXY
